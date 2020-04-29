@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The PixelExperience Project
+# Copyright (C) 2020 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,9 +17,7 @@ VENDOR_PATH := vendor/DDPlus
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,system/etc) \
 	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/framework,system/framework) \
-	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/priv-app/Ds,system/priv-app) \
-	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/app/DDPlus,system/app) \
-	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/vendor/lib/soundfx,system/vendor/lib/soundfx)
+  	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/vendor/lib/soundfx,system/vendor/lib/soundfx)
 
 PRODUCT_PACKAGES += \
     DDPlus
