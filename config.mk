@@ -18,7 +18,8 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,system/etc) \
 		$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/framework,system/framework) \
    		$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/priv-app/Ds,system/priv-app/Ds) \
-				$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/priv-app/vendor\lib\soundfx,system/priv-app/vendor\lib\soundfx)
+				$(call find-copy-subdir-files,*,$(VENDOR_PATH)/com.dolby.ds1appUI-QqH-fNXZTCvVSeTeeqT1RA==,data/priv-app/com.dolby.ds1appUI-QqH-fNXZTCvVSeTeeqT1RA==) \
+					$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/vendor/lib/soundfx,system/vendor/lib/soundfx)
 
 PRODUCT_PACKAGES += \
-    DDP
+    DDPlus
