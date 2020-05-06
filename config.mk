@@ -16,8 +16,14 @@ VENDOR_PATH := vendor/DDPlus
 
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,system/etc) \
-	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/framework,system/framework) \
-  	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/vendor/lib/soundfx,system/vendor/lib/soundfx)
+
+PRODUCT_COPY_FILES += \
+	vendor/DDPlus/system/vendor/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_SYSTEM)/vendor/lib/libstagefright_soft_ac4dec.so \
+	vendor/DDPlus/system/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_SYSTEM)/vendor/lib/libstagefright_soft_ddpdec.so \
+	vendor/DDPlus/system/vendor/lib/soundfx/libdseffect.so:$(TARGET_COPY_OUT_SYSTEM)/vendor/lib/soundfx/libdseffect.so \
+	vendor/DDPlus/system/framework/dolby_ds.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/dolby_ds.jar 
+  	
 
 PRODUCT_PACKAGES += \
-    DDPlus
+    DDPlus \
+    Ds
