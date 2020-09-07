@@ -14,3 +14,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DDPlus \
     Ds
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.keep_app_1=com.dolby.ds1appUI
